@@ -1,0 +1,11 @@
+# Public docs repo — anti-leak guard.
+# This repository must never contain application source. The hook below fails
+# any commit that stages a .py or .tsx file. Activate with `pre-commit install`.
+repos:
+  - repo: local
+    hooks:
+      - id: no-source-files
+        name: anti-leak — no .py/.tsx in the public docs repo
+        language: fail
+        entry: "BLOCKED: source files (.py/.tsx) must never be committed to the public docs (main) repo."
+        files: '\.(py|tsx)$'

@@ -1,0 +1,27 @@
+name: anti-leak
+
+# Server-side guard mirroring the local pre-commit hook: this is the public,
+# docs-only repository and must never contain application source. Fails if any
+# .py or .tsx file is present in the tree (on every push and pull request).
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  no-source-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject .py/.tsx in the public docs repo
+        run: |
+          matches="$(git ls-files '*.py' '*.tsx')"
+          if [ -n "$matches" ]; then
+            echo "::error::Source files must never live in the public docs repo:"
+            echo "$matches"
+            exit 1
+          fi
+          echo "OK — no .py/.tsx files in the public docs repo."
