@@ -90,8 +90,7 @@ index at the user's direction.
 | hqq | Apache-2.0 |
 | pandas | BSD-3-Clause |
 | pyarrow (Apache Arrow) | Apache-2.0 |
-| pyiqa (IQA-PyTorch) | CC BY-NC-SA 4.0 + S-Lab License 1.0 (**non-commercial**) — ⚠️ under review |
-| insightface (code) | MIT — model weights ⚠️ verify (non-commercial) |
+| pyiqa (IQA-PyTorch) | CC BY-NC-SA 4.0 + S-Lab License 1.0 (**non-commercial**) — Bitcrush Studio 1.x is distributed free of charge; this component will be replaced or separately licensed before any paid or membership-gated features ship |
 
 ## 4. Native binaries
 
@@ -110,14 +109,15 @@ index at the user's direction.
 ## 6. ML model weights
 
 Model weights are downloaded on demand from their sources (e.g. Hugging Face)
-and are **not** bundled in the installer. Each weight carries its own license;
-the ones intended for use include (licenses ⚠️ to verify per model):
+at the user's direction and are **not** bundled in the installer. VLM / LLM
+weights the user selects for captioning run through standard loaders
+(`transformers`, `llama-cpp-python`). Each model is governed by its own
+license, which applies to your use of it — review the model card before
+commercial use. Licenses for the models Bitcrush Studio offers by default:
 
 - Microsoft **Florence-2** (OCR/caption) — MIT
 - **SmilingWolf WD** taggers — Apache-2.0
 - **JoyTag** (fancyfeast/joytag) — Apache-2.0
-- **InsightFace** detection/recognition packs — ⚠️ verify (non-commercial)
-- JoyCaption / VLMs — ⚠️ verify
 
 Excluded from public builds: the former object-detection stack and associated
 weights are intentionally not distributed in Bitcrush Studio 1.0.0.
