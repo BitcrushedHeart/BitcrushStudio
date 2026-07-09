@@ -42,14 +42,29 @@ shipping a separate paid build — one artifact to build, test, and update.
 
 ## Platform
 
-- **Windows** desktop application.
+- **Windows** (installer) and **Linux** (AppImage) desktop application — both
+  published together on each release.
 - Uses your local GPU where available (an ML/GPU stack is downloaded to your
-  device during setup, at your direction).
+  device during setup, at your direction). CPU-only mode is fully supported.
 
 ## Installation
 
-Download the latest build from the **Releases** page and run the installer.
-Release notes accompany each version.
+Download the latest build from the
+[**Releases**](https://github.com/BitcrushedHeart/BitcrushStudio/releases) page
+and run it. Release notes accompany each version.
+
+> Builds are not yet code-signed, so Windows SmartScreen may warn on first run —
+> **More info → Run anyway**. Details in the [installation guide](docs/installation.md).
+
+## Documentation
+
+- [Installation](docs/installation.md) — Windows & Linux, system requirements,
+  SmartScreen, uninstalling.
+- [First-time setup](docs/first-run-setup.md) — the setup flow, GPU acceleration
+  options, re-running setup / repair.
+- [Updates](docs/updates.md) — how auto-update works and how to control it.
+- [Troubleshooting](docs/troubleshooting.md) — logs, common issues, filing a
+  good bug report.
 
 ## License
 
