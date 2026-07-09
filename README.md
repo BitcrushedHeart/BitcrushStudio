@@ -83,8 +83,10 @@ Thank you to all the researchers and developers that made Bitcrush Studio possib
 ## License
 
 Bitcrush Studio is proprietary software, free to download. Use is governed by the
-End User License Agreement included with each build. Bundled third-party open-source
-components remain under their own licenses, with attributions shipped alongside the app.
+[End User License Agreement](EULA.md) (see also [LICENSE](LICENSE)), included with
+each build. Bundled third-party open-source components remain under their own
+licenses — attributions are listed in
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and shipped alongside the app.
 
 ## Related Projects
 
