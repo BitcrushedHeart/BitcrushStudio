@@ -18,6 +18,10 @@
   Bitcrush Studio is a desktop app for building, captioning, cleaning, reviewing, and preparing large image–caption datasets.
 </p>
 
+<p align="center">
+  <img src="assets/gallery-view.jpg" alt="Gallery view — browse, filter, and score your dataset" width="900" />
+</p>
+
 ## Features
 
 ### Build datasets
@@ -29,6 +33,10 @@
 - Caption with local or API-based LLMs.
 - Use WD Tagger and JoyTag models.
 - Generate variations and metadata-aware prompts.
+
+<p align="center">
+  <img src="assets/detail-modal.jpg" alt="Detail view — multi-line captions, rating, and tags per image" width="900" />
+</p>
 
 ### Clean and curate
 - Find duplicates using hashes, pHash, dHash, or embeddings.
