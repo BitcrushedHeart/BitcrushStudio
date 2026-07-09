@@ -1,13 +1,9 @@
 # Bitcrush Studio
 
 **Bitcrush Studio is a desktop application for managing large image–caption
-datasets** — built for collections ranging from a handful of images up to
-millions of image–caption pairs, where a single image may carry multiple
-captions.
+datasets**.
 
-It is **closed-source, proprietary software that is free to download**. This
-repository hosts the project's public documentation only; the application
-source is not published here.
+Captioning, labelling, masking, and scoring images - made easy.
 
 ---
 
@@ -30,16 +26,6 @@ fast, local, GPU-aware workflow:
 
 Everything runs on your own machine; your images and captions stay local.
 
-## Editions
-
-| Edition | How you get it | What you get |
-|---|---|---|
-| **Free** | Download and install | The full toolset that isn't flagged supporter-only |
-| **Supporter** | Link an active membership in-app | Everything in Free, plus any supporter-only tools |
-
-Premium capability is unlocked at runtime by a membership link rather than by
-shipping a separate paid build — one artifact to build, test, and update.
-
 ## Platform
 
 - **Windows** (installer) and **Linux** (AppImage) desktop application — both
@@ -55,6 +41,8 @@ and run it. Release notes accompany each version.
 
 > Builds are not yet code-signed, so Windows SmartScreen may warn on first run —
 > **More info → Run anyway**. Details in the [installation guide](docs/installation.md).
+
+Bitcrush Studio was written in Python & Typescript - no vulnerabilities are shipped with a release.
 
 ## Documentation
 
