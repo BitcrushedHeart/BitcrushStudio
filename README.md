@@ -1,4 +1,10 @@
-# Bitcrush Studio
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark-bg.png" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/wordmark-light-bg.png" />
+    <img src="assets/wordmark-light-bg.png" alt="Bitcrush Studio" width="560" />
+  </picture>
+</p>
 
 **Bitcrush Studio is a desktop application for managing large image–caption
 datasets**.
