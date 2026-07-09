@@ -5,71 +5,84 @@
     <img src="assets/wordmark-light-bg.png" alt="Bitcrush Studio" width="560" />
   </picture>
 </p>
+<p align="center">
+  <a href="https://www.patreon.com/cw/Bitcrushed_Heart">
+    <img src="https://img.shields.io/badge/Patreon-Bitcrushed__Heart-bb00a1?style=flat&amp;logo=patreon&amp;logoSize=auto" alt="Patreon: Bitcrushed Heart">
+  </a>
+  <a href="https://civitai.red/user/BitcrushedHeart">
+    <img src="https://img.shields.io/badge/Civitai%20Red-BitcrushedHeart-68005b?style=flat&amp;logo=robotframework&amp;logoSize=auto" alt="Civitai Red: BitcrushedHeart">
+  </a>
+</p>
+  
+<p align="center">
+  Bitcrush Studio is a desktop app for building, captioning, cleaning, reviewing, and preparing large image–caption datasets.
+</p>
 
-**Bitcrush Studio is a desktop application for managing large image–caption
-datasets**.
+## Features
 
-Captioning, labelling, masking, and scoring images - made easy.
+### Build datasets
+- Import from Hugging Face Datasets and supported websites.
+- Extract frames from videos.
+- Sort images into concepts.
 
----
+### Caption and label
+- Caption with local or API-based LLMs.
+- Use WD Tagger and JoyTag models.
+- Generate variations and metadata-aware prompts.
 
-## What it does
+### Clean and curate
+- Find duplicates using hashes, pHash, dHash, or embeddings.
+- Detect broken images and poor-quality samples.
+- Review, score, compare, and prune datasets.
 
-Bitcrush Studio brings the repetitive parts of dataset preparation into one
-fast, local, GPU-aware workflow:
-
-- **Tagging** — automatic image tagging with multiple models, plus bulk
-  find-and-replace and tag normalisation.
-- **Captioning** — review, edit, and reconcile captions with a workflow built
-  for fast human verification rather than blind trust in model output.
-- **Masking & editing** — region masking, watermark handling, letterbox
-  cropping, and image manipulation.
-- **Deduplication** — detect and remove duplicate and near-duplicate images.
-- **People & location** — optional people scanning and offline EXIF-based
-  location tagging.
-- **Dataset building** — import and organise media with its metadata.
-- **Quality tools** — surface low-quality and problematic files.
-
-Everything runs on your own machine; your images and captions stay local.
-
-## Platform
-
-- **Windows** (installer) and **Linux** (AppImage) desktop application — both
-  published together on each release.
-- Uses your local GPU where available (an ML/GPU stack is downloaded to your
-  device during setup, at your direction). CPU-only mode is fully supported.
+### Prepare for training
+- Convert, downscale, crop, rotate, and export images.
+- Generate masks for masked diffusion training.
 
 ## Installation
 
-Download the latest build from the
-[**Releases**](https://github.com/BitcrushedHeart/BitcrushStudio/releases) page
-and run it. Release notes accompany each version.
+Available for **Windows** (installer) and **Linux** (AppImage) — both published together on every release.
 
-> Builds are not yet code-signed, so Windows SmartScreen may warn on first run —
-> **More info → Run anyway**. Details in the [installation guide](docs/installation.md).
+> [!IMPORTANT]
+> **Note:** CUDA 13 is required for GPU features - update your GPU drivers to get the latest version of CUDA for PyTorch.
+> AMD GPU support is _experimental_ and no assurances are given that it is fully functional at this stage.
 
-Bitcrush Studio was written in Python & Typescript - no vulnerabilities are shipped with a release.
+### Automatic Installation
 
-## Documentation
+Just download the latest release via the [Releases tab](https://github.com/BitcrushedHeart/BitcrushStudio/releases) and run the installer - Bitcrush Studio will walk you through the rest of the process.
 
-- [Installation](docs/installation.md) — Windows & Linux, system requirements,
-  SmartScreen, uninstalling.
-- [First-time setup](docs/first-run-setup.md) — the setup flow, GPU acceleration
-  options, re-running setup / repair.
-- [Updates](docs/updates.md) — how auto-update works and how to control it.
-- [Troubleshooting](docs/troubleshooting.md) — logs, common issues, filing a
-  good bug report.
+> [!NOTE]
+> Builds aren't code-signed yet, so Windows SmartScreen may warn on first run — click **More info → Run anyway**.
+
+More detail: [Installation](docs/installation.md) · [First-time setup](docs/first-run-setup.md) · [Updates](docs/updates.md) · [Troubleshooting](docs/troubleshooting.md)
+
+## Updating
+
+Bitcrush Studio will automatically update when a new version is released - you can disable this feature in the application settings.
+
+## Bug Reporting & Feature Suggestions
+
+Please raise any bugs or feature requests in the [Issues Tab](https://github.com/BitcrushedHeart/BitcrushStudio/issues) in GitHub.
+
+## Summary & Credits
+
+Thank you to everyone that has supported me during my time in the machine-learning community, particularly [dxqb](https://github.com/dxqb), [Koratahiu](https://github.com/Koratahiu), [O-J1](https://github.com/O-J1) and [caith-h](https://github.com/caith-h).
+
+Thank you to all the researchers and developers that made Bitcrush Studio possible. 
+
+**Made with <3 By BitcrushedHeart**
 
 ## License
 
-Bitcrush Studio is proprietary. Use of the application is governed by its End
-User License Agreement, included with each build. The application bundles
-third-party open-source components, each under its own license, with
-attributions provided alongside the build.
+Bitcrush Studio is proprietary software, free to download. Use is governed by the
+End User License Agreement included with each build. Bundled third-party open-source
+components remain under their own licenses, with attributions shipped alongside the app.
 
-© Bitcrush Studio. All rights reserved.
+## Related Projects
 
-## Support
+[**Bitcrush Linki**](https://github.com/BitcrushedHeart/BitcrushLinki) - Chromium extension to copy a large number of links from your open tabs. Free & open source. 
 
-Questions, bug reports, and feature requests are welcome via this repository's
-**Issues** page.
+[**OneTrainer**](https://github.com/Nerogar/OneTrainer) - For training diffusion models. Bitcrush Studio was built with OneTrainer support first.
+
+
+
