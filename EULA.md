@@ -1,6 +1,6 @@
 # End User License Agreement — Bitcrush Studio
 
-**Version 0.2.0**
+**Version 1.0.0**
 
 This End User License Agreement ("Agreement") is a legal agreement between you
 ("You") and BitcrushedHeart ("we", "us", "the Developer") for the Bitcrush
