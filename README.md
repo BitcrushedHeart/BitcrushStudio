@@ -12,6 +12,9 @@
   <a href="https://civitai.red/user/BitcrushedHeart">
     <img src="https://img.shields.io/badge/Civitai%20Red-BitcrushedHeart-68005b?style=flat&amp;logo=robotframework&amp;logoSize=auto" alt="Civitai Red: BitcrushedHeart">
   </a>
+    <a href="https://civitai.red/user/BitcrushedHeart">
+    <img src="https://img.shields.io/badge/Discord-Join%20Now-c9007a?style=flat&logo=discord" alt="Badge">
+  </a>
 </p>
   
 <p align="center">
