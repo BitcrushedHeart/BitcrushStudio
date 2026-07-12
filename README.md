@@ -24,6 +24,8 @@
 
 ## Features
 
+[Check the wiki for more information!](https://github.com/BitcrushedHeart/BitcrushStudio/wiki)
+
 ### Build datasets
 - Import from Hugging Face Datasets and supported websites.
 - Extract frames from videos.
