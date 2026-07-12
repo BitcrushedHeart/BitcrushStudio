@@ -10,7 +10,7 @@ before that component ships in a commercial release — see the internal
 > Regenerate when dependencies change (the release build can refresh this from
 > `backend/requirements-*.txt` and `frontend/package.json`). This file is not
 > stamped by `scripts/release_stamp.py` — it carries no app version number, so
-> it can't drift from the stamped release version (ISSUE-TBD).
+> it can't drift from the stamped release version.
 
 ---
 
